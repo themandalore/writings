@@ -9,7 +9,7 @@ With the advent of app chains and restaking, the design space for chains is taki
 The idea of an “enshrined” oracle has been discussed for years, with implementations as early as Amoveo in 2018, and even making its way to a proposal for Ethereum back in 2020.  An example would be all of the validators of a chain signing a median of API calls before each block to update a price variable they make accessible to smart contracts. For a rollup, this could just be the sequencer updating a precompiled contract with the prices of various assets.  For a PoW chain or based rollup (e.g. blocks and transactions arranged on a DA layer), it could just be block proposer entering a value with their block.
 
 <p align="center">
-    <img src= './pictures/enshrinedOracles.png' alt='sample enshrined oracle where validators tack on oracle data while signing a block' />
+    <img src= './pictures/enshrinedOracles.png' width="600" alt='sample enshrined oracle where validators tack on oracle data while signing a block' />
 </p>
 
 
