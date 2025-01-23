@@ -1,12 +1,14 @@
 <h1>social slashing our legs off - changing the issuance curve</h1>
 
-tldr - I’m for capping the total amount of ETH staked, but you need to target exogenous rewards directly (LSTs, restaking, exchanges, etc.).  Without doing so we have no control or insight into the true demand curve for staking and the yield curve is largely meaningless unless extreme measures (negative rates) are taken, ones which will likely centralize ethereum in different ways. BUT we should move quickly as those looking to ossify the chain are growing larger.
+Originally Posted April 17th 2024 - https://mirror.xyz/themandalore.eth/y4wDpXtVv-3rNf_zVjkXsXuThvrF32NdpNRJH_rtHiY 
 
-intro
+<b>tldr - I’m for capping the total amount of ETH staked, but you need to target exogenous rewards directly (LSTs, restaking, exchanges, etc.).  Without doing so we have no control or insight into the true demand curve for staking and the yield curve is largely meaningless unless extreme measures (negative rates) are taken, ones which will likely centralize ethereum in different ways. BUT we should move quickly as those looking to ossify the chain are growing larger.</b>
+
+<b>intro</b>
 
 Recently, an intriguing post was published on endgame staking and another recent proposal calling for targeting the absolute percent of ETH staked. The basic argument is that Ethereum should reduce the base staking reward in an effort to minimize the percent of ETH staked. The main argument is that it keeps ETH and not the LST as "money", not to mention that high amounts of ETH staked is sort of pointless (if everyone gets inflated, no one wins).  I’ll dive further into more arguments, but this piece should portray that although stake targeting is important, unless you target external rewards, the issuance change is likely to just centralize the validator set faster.
 
-why we can’t have nice things - the argument for reward reduction
+<b>why we can’t have nice things - the argument for reward reduction</b>
 
 To summarize the goals of changing the issuance curve, we want to:
 
@@ -31,7 +33,7 @@ Another benefit of a low amount staked is that even if those 10% are owned by 5-
 
 These are all great goals. I’m on board with all of them. I just disagree that these goals can be targeted successfully solely by issuance curve adjustments.
 
-lsts and ETH #couplegoals
+<b>lsts and ETH #couplegoals</b>
 
 The date is May 2032, and after years of legal battles coinciding with executive leader and supreme court justice Trump abolishing the SEC, a staked ETH ETF is finally approved.  Like other ETF’s, they all use the one centralized exchange left (Coinbase) as a sole custodian of the staked Ether.  Within 2 days of its launch, all of the previous spot ETF’s are converted into this staking ETF and 68% of the ETH supply is now deposited and held with Coinbase for staking.
 
@@ -39,7 +41,7 @@ Although this nightmare scenario seems implausible, it’s quite far from imposs
 
 The truth is that reward curves are different for every party.  Larger parties that have the ability to restake or leverage their validator role get more.  LST’s with massive governance tokens have different thoughts than profitability.  Tradfi institutions with no cost of capital (e.g. a custodian) and regulatory moats make different calculations than solo stakers.
 
-relative vs absolute armageddon - is a small centralized validator set ok?
+<b>relative vs absolute armageddon - is a small centralized validator set ok?</b>
 
 Let’s assume another extreme scenario: we have only 20% of ETH staked, the issuance rate is -2%, but of our validator set 3% is honest solo stakers and 97% of validators run by one company who runs an LST or a CEX. What do we do if they start censoring?  Let’s say they continue to completely ignore all unregistered defi transactions (it’s a US entity). Sure, you can still get through, but only on 3% of blocks.
 
@@ -49,7 +51,7 @@ The answer is not much.  We could spin up new validators to gain more control, b
 
 Now this could be an option, but unfortunately the validator set is no longer siloed to just those parties; LST’s specifically bleed into other aspects of the chain.  At any positive yield, they’ll be collateral throughout defi.  The centralized entity as well won’t just be “evil centralized entity Inc.”... they’ll have all the same investors as every project on-chain.  They’ll position themselves as “distributed” with a DAO and every other system that rightfully decentralizes themselves.  But it’s still a third party.  They’re not the exact same stakeholders as the base layer and if they get too large (even in percentage terms), a separate set of actors or holders will control the chain.
 
-the effects on going solo
+<b>the effects on going solo</b>
 
 The reason you get solo stakers in a world with low rates is that they love Ethereum.  They have ETH tattoos and undercuts that they show off at hackathons. They run full nodes and are aligned to the core with getting things done.  The problem is that there’s not enough of them to keep the chain running by themselves.
 
@@ -63,7 +65,7 @@ If you raise rates a little, the first people who want to stake more are the sam
 
 Granted the winner at any level of staking is the party with the most efficient use of capital (the long run equilibria), however forcing a change now without addressing the concentrated actors will force centralization faster, not slower.
 
-racing up golgatha - the problem with negative rates
+<b>racing up golgatha - the problem with negative rates</b>
 
 Unfortunately, the staking demand curves for these concentrated actors seem to indicate staking won’t stop without issuance going quite negative.  As this happens, the big question is if we can or even want a base deflationary asset.
 
@@ -73,14 +75,14 @@ Despite libertarian arguments for a deflationary currency, the truth is that eco
 
 Redistributing MEV rewards to all token holders by burning is one thing, but planning for negative issuance and inflation may have weird consequences in our system and I hope we don’t rush into anything too fast should the current issuance curve proposal fail.
 
-steering boats with spoons - monetary policy and distributional issues
+<b>steering boats with spoons - monetary policy and distributional issues</b>
 
 When sybil resistance is a thing, you MUST either have a social layer push more ideal distributions or build the system to not care about distributions (e.g. bitcoin).  As we’ve shown above, distribution does matter in the validator set. 33%, 50%, and 66% are magic numbers that one entity should not control.  So you have to enact some form of social protection around these numbers or the system breaks down.  Being able to thrive above those numbers is also a goal too (if it does get there, being able to work down is a nice property), but the goal needs to be getting under.
 
 Monetary policy tools and issuance curve adjustments are an excellent idea for academia, but reality is more complicated.  If a restaking protocol has 15% rewards on top of staking, anything you do to the base reward is meaningless to their bottom line without severe implications to every other actor.  If a protocol has a $2 billion governance token, the founders and those farming points don’t care if there are any rewards.  They’ll give out inflationary rewards of their own and wreck your chains for years until the whales can exit.  They’ll affect the social layer and pollute the discourse  until even the most fervent decentralization maxi questions whether we ever even had values.
 
-so why maybe now - difficulty bombing it
+<b>so why maybe now - difficulty bombing it</b>
 
 I’m not opposed to reducing rates.  It’s very possible we’re over paying for security, have too much ETH staked, and of course I hate LST’s with a passion; but you can’t figure out what the demand curve is for staking without addressing external rewards.   If we change the issuance curve prematurely, we’ll likely remove the parties we want to keep and be stuck with more centralization than before.  The only reason I’m for changing any sort of curve is to keep the discussion open.  ETH is not ossified and we should do whatever we can to keep it from being the case.  If we feel like this change is necessary to have more changes next year, then I’m all for it.  Make our intent known that we’ll throw caution to the wind when it comes to stopping the cartelization of the validator set.
 
-I’ve been writing on other options , but just remember we can choose to have an opinion as we figure out new technical solutions.
+I’ve been [writing on other options](https://ethresear.ch/t/blue-shell-strategy-discouraging-the-most-concentrated-actor-as-an-optimal-path/19200) , but just remember we can choose to have an opinion as we figure out new technical solutions.
