@@ -58,6 +58,11 @@ Money is pricey.  Money for a long time is even pricier.  One of the biggest dow
 
 Who shows up to play the game matters.  
 
+<p align="center">
+    <img src= './pictures/surveys.png' width="400" />
+</p>
+
+
 Open prediction markets like the ones seen in the current crypto ecosystem have a self-selection of participants.  What this means is that you get to choose whether or not you want to play.  If no one’s opinionated but insiders, you have markets where there’s no game to be played. Additionally if there’s no disagreement, there’s no two sides and you don’t even know how certain one side is (they won’t lock up capital for no reason).  You also have a problem where only risky participants play.  If a scenario has a 70% chance of happening, that means you still have a 30% chance of losing money and for some people, this is a no go. Especially in cases where the informed traders may be more risk averse than the uninformed (i.e. one candidate in an election market has all of the gamblers), the market can be skewed by who’s participating. 
 
 <i>Distributional Inequity</i>

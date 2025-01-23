@@ -20,6 +20,10 @@ not overpay for security
 
 To expand on how it will work, without restating too much of the other articles, the idea is to make the issuance curve more sensitive to the level of staking participation.  We’d target something like 20% of total ETH staked and then if too many people are staking, the rewards go down and less people will stake.
 
+<p align="center">
+    <img src= './pictures/issuanceCurve.png' width="800" />
+</p>
+
 
 If you have less people staking, then the system makes more sense.  If only 10% of ETH is staked, the other 90% is used as money/gas/collateral.  Since it’s inflationary rewards, you can look at it like the 90% getting their assets devalued to pay the 10%. If the ratios are flipped, it doesn’t make much sense and even pushes those last 10% to stake even more (you’re diluted faster).
 
