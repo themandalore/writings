@@ -1,3 +1,5 @@
+<h1> The Delusion of Liquidity</h1>
+
 You’ve heard the cries in every altcoin group on Telegram: “We need more liquidity!”, “If only we can get on “XYZ exchange” and get some real liquidity in our token”, or the more subtle “we should hire market makers for the token.”
 
 Liquidity is hailed as a godsend. The theory is that market makers and larger exchanges beget liquidity, and liquidity begets large buyers, which in turn allows the price to rise and early holders to profit. But the theory is flawed. It feeds into the myth of this being a widely used commodity when it’s not. It’s about the illusion of use, not about building great protocols that have actual users with natural liquidity flowing from properly valued fundamentals and it’s not about setting the project up for long term success.
