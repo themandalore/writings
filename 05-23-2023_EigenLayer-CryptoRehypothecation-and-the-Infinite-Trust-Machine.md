@@ -73,7 +73,7 @@ This means that your protocol will need to match, and likely exceed due to nasce
 
 So my advice to upcoming infra projects… lean into the token. You’ll need it and hopefully it can give you a shot if you’re lucky. Customers NEVER turn you down because you don’t have the security, it’s almost always because the other guy’s free and much faster due to faux decentralization.
 
-<b>stETH and LST’s are custodial cesspools.
+<b>stETH and LST’s are custodial cesspools.</b>
 
 I’ll just say it, liquid staking is a disaster for a decentralized chain. Fungibility issues lead to centralization. The distribution reality of centralized exchanges further exacerbates the problem. And finally, the custodial nature makes the entire underlying chain unsafe in the exact same ways CEX’s that stake in general do.
 
