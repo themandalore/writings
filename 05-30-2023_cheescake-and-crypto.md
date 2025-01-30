@@ -79,3 +79,10 @@ And this is how we loop back to me beating old ladies at cooking competitions. T
 As a start, we have to generate backups. We have to proactively create and support the minority clients. More nuance in search results and products IS bad ux. And that’s fine because it’s an admission that not everything will work for everyone. In crypto we need robustness. We need to actively seek the systems with bad UX that add something different.
 
 You are going to have to be conscious about this. You’re going to have to think about what to build and whether you should. You might need to stop pushing for institutional adoption. Maybe push for minimum viable adoption. What’s the society you strive for? Find like-minded people and push for the same. Truly winning looks like eternally struggling for market share; so let’s keep it up.
+
+
+<p align="center">
+    <img src= './pictures/cheescake.png' width="600" alt='https://prettysimplesweet.com/ricotta-cheesecake/' />
+</p>
+
+[1] https://www.bitstamp.net/learn/blockchain/what-is-the-blockchain-trilemma/
