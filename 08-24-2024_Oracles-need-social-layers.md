@@ -8,6 +8,7 @@ Imagine you have a blockchain.  PoS.  Validators stake tokens and they get to ta
 <p align="center">
     <img src= './pictures/oracle/1.png' width="800" />
 </p>
+
     [The Normal PoS Chain - A proposer (A) creates a block (B) that is validated by attestors (C) and is added to the blockchain (D).  A new proposer (E) is selected]
 
 It looks from a quick glance that the system is secure up to 2/3 of the validator set being compromised.  If someone bought up or bribed 2/3 of tokens, they could break the system and double spend ... right?
@@ -15,6 +16,7 @@ It looks from a quick glance that the system is secure up to 2/3 of the validato
 <p align="center">
     <img src= './pictures/oracle/2.png' width="800" />
 </p>
+
     [The Bad Actor - a bad actor(A) submits a bad block (B).  He controls the majority of validators (C)  and takes over chain(D), taking all the funds (E)]
 
 Wrong.
@@ -26,6 +28,7 @@ All blockchains have a social layer to fall back on. Honest users would simply s
 <p align="center">
     <img src= './pictures/oracle/3.png' width="800" />
 </p>
+
     [Falling Back to the Social Layer - A malicious proposer(A) submits a bad block.  A fork (B) is initiated. The honest users (C) go on the fork without the bad actor (E), leaving him alone on his malicious fork (D). ]
 
 In case you didn’t know, honest majority assumptions are bad.  They give you a specific number of tokens you need to buy up for an attack.  If there’s a dollar amount to those tokens, your system can’t secure more than that amount (and this is even with bribes aside).
@@ -35,14 +38,15 @@ Thanks to the fallback option of the social layer, an attacker would never get a
 
 To answer, let’s try out the two extreme options:
 
-  Option a) - Have no stake and anyone can propose
-  Option b) - Just have a centralized system and use the social layer to fork if they misbehave
+  * Option a) - Have no stake and anyone can propose
+  * Option b) - Just have a centralized system and use the social layer to fork if they misbehave
   
 For option a, you have a sybil/ ddos problem.  If anyone can propose, you have an issue with interoperability as you need some way to see what is the agreed upon truth.  If you don’t need a global consensus, this can actually work in some fashion, but if you want to see what everyone else is thinking, this method is rather inefficient and spam/ordering can get out of control.  You need to handle for someone with a giant data center spinning up millions of nodes and just making it a hardware race.  How can a smart contract system pick the consensus view?  This option won’t work if you want trustless interoperability with even other nodes in a quick fashion.
 
 <p align="center">
     <img src= './pictures/oracle/4.png' width="800" />
 </p>
+   
     [The PoA Chain - whitelisted validator (A) proposes a block.  Other whitelisted validators (C) attest to it and it to a trusted blockchain (D) ]
 
 
@@ -53,6 +57,7 @@ So to solve the tradeoffs between a and b, we have PoW and PoS.
 <p align="center">
     <img src= './pictures/oracle/5.png' width="800" />
 </p>
+    
     [The  PoS chain - A proposer (A) creates a block (B) that is validated by attestors (C) and is added to the blockchain (D).  A new proposer (E) is selected]
 
 The stake or PoW provides a means for preventing sybil attacks while also allowing anyone to take part, ensuring liveness and fairness.  It’s quite the elegant solution.
@@ -67,14 +72,15 @@ To make a token or data bridge work, you say something on one chain (e.g. tokens
 <p align="center">
     <img src= './pictures/oracle/6.png' width="800" />
 </p>
+    
     [The Basic Bridge - A user (A) deposits tokens (B) on a blockchain (C) . An oracle or proof system(D) attests to the deposit on the destination chain (G), minting the user (F) the tokens (E)]
 
 But as we’ve talked about…finality is hard. There’s this slow thing called the social layer and it’s necessary to be secure.  Even if you see something happen, how do you know that the social layer didn’t (or won’t) step in and revert the transaction?  How on earth can you ever say something is finalized?
 
 In practice, finality risk for bridges is handled in one of two ways:
 
-  a) a multisig that we treat as final
-  b) use a delay (optimistic bridge).
+  * a) a multisig that we treat as final
+  * b) use a delay (optimistic bridge).
 
 Assuming we don’t want a multisig as our bridge, we can look at b as the only real option.  In fact delays are what exchanges use too (ever “wait for 10 confirmations” before funds hit?). Over simplifying things, this latter option is what rollups, exchanges, and most off-chain applications use.
 
@@ -83,6 +89,7 @@ So to make a secure bridge, you set a crazy delay for that “burn” message(e.
 <p align="center">
     <img src= './pictures/oracle/7.png' width="800" />
 </p>
+   
     [The Optimistic Fraud Proof - A blockchain (A) receives a withdrawal message from their bridge contract (B).  Time (C) passes (e.g. 7 days). If there is no fraud, the funds are minted (D).  If someone does detect fraud, any user (E) can submit a fraud proof (F) to prevent the withdrawal]
 
 Again, this is great, but who wants a 7 day bridge?  No one, that’s who. But luckily we’ve made things faster.  What you do is you just use third parties to bridge the gap.
@@ -92,6 +99,7 @@ Users say, “I want to go from chain A to chain B” and some third party will 
 <p align="center">
     <img src= './pictures/oracle/8.png' width="800" />
 </p>
+    
     [The Fast Bridge- a user (A) wants to bridge to a different chain (D).  He can either wait to use the optimistic bridge (C) or use go through a centralized party with tokens on both chains (B), who will take his tokens on one chain and fulfill his request on the other. ]
 
 And this works.  Parties don’t complain too much, and as long as the third party operator is taking the risk and we don’t do bailouts, the system works great.
@@ -123,6 +131,7 @@ If you really want to speed it up, have a fast thing that assumes some centraliz
 <p align="center">
     <img src= './pictures/oracle/9.png' width="800" />
 </p>
+    
     [Safely Using an Oracle  - An oracle (A) submits a value (B).  The user (C)  can either accept the answer or  fallback to it’s social layer (either making the oracle try again or having some other mechanism)]
 
 So that’s it.
@@ -131,13 +140,10 @@ And as you guessed, most of defi isn’t built like this.  Right now most of def
 
 So if we’re doing decentralized things with oracles, let’s change the usage.  And to give some specific examples of what it can look like:
 
-<i>Pause buttons</i> -  with the ability to fallback to a social layer if things are broken
-
-<i>Siloed System/ delayed withdrawals</i> - that assumes optimistic oracle updates but can revert if there’s a failure (no exits until the oracle is verified (or not disputed))
-
-<i>Contract Limits / Liquidation Conditions</i> - if you don’t want to delay things, there can still be rules that your system should follow (e.g. liquidation if oracle updates are too big, system freezes and unwinds if too much money flows out, etc.)
-
-<i>App-chain or sovereign rollup with a social layer</i> - Being an app-chain/sovereign rollup and having the ability to fall back to your social layer to protect the oracle updates (like you could do with any smart contract hack).  There are other trade-offs for sure, but for the subjective updates, this is the gold standard.
+* <i>Pause buttons</i> -  with the ability to fallback to a social layer if things are broken
+* <i>Siloed System/ delayed withdrawals</i> - that assumes optimistic oracle updates but can revert if there’s a failure (no exits until the oracle is verified (or not disputed))
+* <i>Contract Limits / Liquidation Conditions</i> - if you don’t want to delay things, there can still be rules that your system should follow (e.g. liquidation if oracle updates are too big, system freezes and unwinds if too much money flows out, etc.)
+* <i>App-chain or sovereign rollup with a social layer</i> - Being an app-chain/sovereign rollup and having the ability to fall back to your social layer to protect the oracle updates (like you could do with any smart contract hack).  There are other trade-offs for sure, but for the subjective updates, this is the gold standard.
 
 To conclude, no market cap or crypto-economic security can make an oracle secure and bug free.  Treat them like bridges and make sure someones hedging the finality risk.  Like anything in the blockchain world, moving fast is hard, so be sure that you have proper safeguards in place.
 
