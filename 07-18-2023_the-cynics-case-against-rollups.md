@@ -14,6 +14,10 @@ It sounds simple, but there’s a lot here. For me, I came upon rollups after a 
 
 I think the problem for rollups is actually less technical than the other failures though and just more of a problem of how we’ve been branding them. Rather than that nice definition above, I’ve found that most people think of something like “smart contract state-channels” when they say rollups (cough, cough “inherited security”), and in reality, you just have a separate L1 with a very nice light client bridge to the base L1, usually with some exit mechanism for L1 assets.
 
+<p align="center">
+    <img src= './pictures/rollups.png' width="800" />
+</p>
+
 <b>what is the goal of a rollup?</b>
 
 The real goal of a rollup is tough because of the various definitions. Is it a scaling solution? Is it a new chain or the same one expanded? Whose (if any) social consensus matters?
