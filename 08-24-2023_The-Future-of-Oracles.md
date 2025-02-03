@@ -46,7 +46,7 @@ It’s likely that zk proofs will make direct API calls trustless within a smart
 First we had BTC, which made sense (mostly). Then came alts. Then NFT’s. Each cycle things had cooler real stuff on the long tail (e.g. ETH or L2s or current zk tech), but the majority of the cycle for retail each time was filled with more and more absurd ideas. Blockchain for supply chain was bad, but we had digital pet rocks selling for seven figures last cycle. I’d like to say it’s going to get better, but it likely won’t. Hamster racing, digital ownership of AI sex bots, scanning your eyeballs to upload your wealth and proof of consciousness to a satellite destined for alien planets….whatever happens I’m betting it will make the last cycle look like we were tradfi. And like always, if you’re actually paying attention and make the claim that none of it makes sense, you’ll be ostracized and looked at as a pariah that just “doesn’t get the future”. So enjoy the ride and pretend you get it so you can go to the cool kid parties.
 
 <p align="center">
-    <img src= './pictures/swoards.png' width="800" />
+    <img src= './pictures/swords.png' width="=600" />
 </p>
 
 
