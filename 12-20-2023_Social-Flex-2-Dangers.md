@@ -45,7 +45,7 @@ And it’s not just the CA themselves. Other related systems want to use the CA 
 
 The CA and others defending the current system would claim that there is no moral hazard and we would slash them, however in practice things work differently. We’ve heard firsthand of protocols picking a CA’s yield for this exact reason and as more liquidity flows the CA yield, it will only become more attractive for upcoming projects.
 
-<b>Mo stake, mo problems — restaking
+<b>Mo stake, mo problems — restaking</b>
 
 LST’s are but the tip of the iceberg when it comes to parasitic protocols. The larger issue currently facing the Ethereum ecosystem is restaking. Restaking is when ETH stake is rehypothecated to act as stake for other services (e.g da, sequencers, oracles, bridges, etc.).
 
