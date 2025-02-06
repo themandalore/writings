@@ -6,11 +6,11 @@ Given the theoretical paths outlined in the third article, this piece focuses on
 
 Of the options looked at, this solution was the one with the highest likelihood to achieve a finalized chain state with the following properties:
 
-    * reduced concentrated actor(CA) validator share
-    * reduced CA rewards
-    * minimal/nonexistent penalty to participating validators
-    * still Ethereum (aka not a minority fork)
-    * Included throughout are references and more resources are added at the bottom of the article if you want to join us down the rabbit hole.
+   * reduced concentrated actor(CA) validator share
+   * reduced CA rewards
+   * minimal/nonexistent penalty to participating validators
+   * still Ethereum (aka not a minority fork)
+   * Included throughout are references and more resources are added at the bottom of the article if you want to join us down the rabbit hole.
 
 <p align="center">
     <img src= './pictures/fafo.png' width="400" />
@@ -64,7 +64,7 @@ consequences to participating validators: Committee aggregators and proposers ar
 
 consequences to the protocol: Of all discouragement attack options analyzed, excluding a limited number of attestations from certain parties seems to be the option with the lightest footprint. More research should be done on how this could affect fork-choice-rule, however theoretically it shouldn’t affect it (all else equal). One consideration to note is relative to the size of the CA. If the CA is >33% of the validator set, you cannot ignore all their attestations, as it would affect block finality. Therefore you would need to limit the number of attestations ignored to only those greater than some threshold for finality.
 
-<b>ousing the beacon — ignore sync committee messages</b>
+<b>dousing the beacon — ignore sync committee messages</b>
 
 In addition to attestations, we can reduce up to another 3.1% of CA rewards by doing a similar aggregation censoring in the sync committee. To briefly explain, Validators are rewarded for correctly participating in sync committee signatures (each day, 512 are chosen, so very rare), which are of use to light clients. This option may even be a preferable first step versus the attestation censorship, as the sync committee is not part of internal fork choice or even required for the main protocol at all.
 
@@ -88,22 +88,20 @@ If you’re interested in joining us to test various code changes or just to pro
 
 <b>further reading</b>
 
-    * Vitalik’s Discouragement attacks: https://github.com/ethereum/research/blob/master/papers/discouragement/discouragement.pdf
-    * Aggregation process:
-https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/validator.md#construct-aggregate
-    * https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/attestations/#aggregated-attestation
-    * https://notes.ethereum.org/@hww/aggregation
-    * Sync protocol spec: https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/light-client/sync-protocol.md
-    * Rewards: https://eth2book.info/capella/part2/incentives/rewards/
-    * Gasper paper: https://arxiv.org/pdf/2003.03052.pdf
-    * Understanding the fork choice rule
-    * Inactivity Leak: https://notes.ethereum.org/@vbuterin/serenity_design_rationale?type=view#Inactivity-leak
-    * Ethereum PoS Attack and Defense: https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs
-    * Shout to Banteg for ideas: https://twitter.com/bantg/status/1561177300741283842
-    * Proof-of-Stake overview: https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/
-    * Vitalik on Lex Friedman on the Social Layer: https://www.youtube.com/watch?v=3yrqBG-7EVE
-    * Can nodes go against the protocol: https://hackmd.io/@prysmaticlabs/finality#Can-nodes-go-against-the-protocol
-    * Consensus and Execution client connections: https://ethereum.org/en/developers/docs/networking-layer/#connecting-clients
-    * Mitigating attacks in PoS https://ethresear.ch/t/change-fork-choice-rule-to-mitigate-balancing-and-reorging-attacks/11127
-    * Cool Epoch and Slot Visualization: https://beaconcha.in/charts/slotviz
-    * Censorship in the PBS Stack: https://www.youtube.com/watch?v=WcJlseuhbX8
+   * Vitalik’s Discouragement attacks: https://github.com/ethereum/research/blob/master/papers/discouragement/discouragement.pdf
+   * Aggregation process: https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/validator.md#construct-aggregate
+   * https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/attestations/#aggregated-attestation
+   * https://notes.ethereum.org/@hww/aggregation
+   * Sync protocol spec: https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/light-client/sync-protocol.md
+   * Rewards: https://eth2book.info/capella/part2/incentives/rewards/
+   * Gasper paper: https://arxiv.org/pdf/2003.03052.pdf
+   * Inactivity Leak: https://notes.ethereum.org/@vbuterin/serenity_design_rationale?type=view#Inactivity-leak
+   * Ethereum PoS Attack and Defense: https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs
+   * Shout to Banteg for ideas: https://twitter.com/bantg/status/1561177300741283842
+   * Proof-of-Stake overview: https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/
+   * Vitalik on Lex Friedman on the Social Layer: https://www.youtube.com/watch?v=3yrqBG-7EVE
+   * Can nodes go against the protocol: https://hackmd.io/@prysmaticlabs/finality#Can-nodes-go-against-the-protocol
+   * Consensus and Execution client connections: https://ethereum.org/en/developers/docs/networking-layer/#connecting-clients
+   * Mitigating attacks in PoS https://ethresear.ch/t/change-fork-choice-rule-to-mitigate-balancing-and-reorging-attacks/11127
+   * Cool Epoch and Slot Visualization: https://beaconcha.in/charts/slotviz
+   * Censorship in the PBS Stack: https://www.youtube.com/watch?v=WcJlseuhbX8
